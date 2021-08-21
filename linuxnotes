@@ -51,3 +51,6 @@ Number 	Permission Type 	Symbol
 6 	Read +Write 		rw-
 7 	Read + Write +Execute 	rwx
 
+stat -c %a file2.txt  →to viewthe numericalvalue
+stat -c '%n %a ’ *  →for all files/directories
+
