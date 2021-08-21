@@ -1,0 +1,53 @@
+Change ownership of files and directories
+
+changing file ownership:
+sudo chown testuser testfile
+>>>>The name of user is testuser and the name of file is testfile.
+
+changing file ownership and group ownership:
+sudo chown testuser:usertest testfile
+
+Changing directories and groups ownership:
+
+Changing the directory ownership and group of the testfolder directory:
+sudo chown testuser:testuser testfolder/
+          ownership:groupownership
+          
+Changing just ownership of the testfolder directory:
+sudo chown testuser: testfolder/
+
+Setting permissions on files and directories:
+The symbolic method:
+r, w ,x
+r = read permission
+w = write permission
+x = execute permission
+- = no permission 
+
+u, g, o ,a
+u 	user/owner
+g 	group
+o 	other
+a 	all 
+
++, - →add or remove a permission
+chmod u+x script.sh
+chmod g+x script.sh
+chmod a+x script.sh
+chmod o+x script.sh
+chmod a-w script.sh
+chmod a-r script.sh
+
+chmod u-x script.sh
+chmod a-x script.sh
+
+Number 	Permission Type 	Symbol
+0 	No Permission   	---
+1 	Execute 		--x
+2 	Write 			-w-
+3 	Execute + Write 	-wx
+4 	Read 			r--
+5 	Read + Execute 		r-x
+6 	Read +Write 		rw-
+7 	Read + Write +Execute 	rwx
+
